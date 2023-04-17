@@ -37,9 +37,9 @@ def main():
     # Security route, probably read in from a file for a real application
     # from either a map or drive and repeat.
     security_route = [
-        [-6.0, -1.5],
-        [-16.2, -1.5],
-        [-13.8, 3.0]]
+        [1.378, -3.114],
+        [-9.208, -4.495],
+        [-10.289, -0.358]]
         # [-10.78, -0.35]]
         # [-3.665, -4.303],
         # [-3.665, 2.330],
@@ -49,10 +49,10 @@ def main():
     initial_pose = PoseStamped()
     initial_pose.header.frame_id = 'map'
     initial_pose.header.stamp = navigator.get_clock().now().to_msg()
-    initial_pose.pose.position.x = 0.4
-    initial_pose.pose.position.y = -0.579
-    initial_pose.pose.orientation.z = 0.9996
-    initial_pose.pose.orientation.w = 0.0259
+    initial_pose.pose.position.x = 3.80
+    initial_pose.pose.position.y = -1.50
+    initial_pose.pose.orientation.z = -0.994
+    initial_pose.pose.orientation.w = 0.103
     navigator.setInitialPose(initial_pose)
 
     # Wait for navigation to fully activate

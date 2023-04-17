@@ -26,7 +26,9 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'command_1 = command.command_1:main'
+            'command_1 = command.command_1:main',
+            'command_2 = command.command_2:main',
+            'command_3 = command.command_3:main'
         ],
     },
 )
